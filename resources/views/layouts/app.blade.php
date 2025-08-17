@@ -38,6 +38,10 @@
                        class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors {{ request()->routeIs('stores.index') ? 'bg-blue-50 text-blue-600' : '' }}">
                         All Stores
                     </a>
+                    <a href="{{ route('settings.index') }}" 
+                       class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors {{ request()->routeIs('settings.index') ? 'bg-blue-50 text-blue-600' : '' }}">
+                        Settings
+                    </a>
                     <a href="{{ route('stores.create') }}" 
                        class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
