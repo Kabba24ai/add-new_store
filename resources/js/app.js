@@ -25,24 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Auto-hide flash messages
-    const flashMessages = document.querySelectorAll('[x-data]');
-    flashMessages.forEach(message => {
-        if (message.getAttribute('x-init')) {
-            // Already has Alpine.js handling
-            return;
-        }
-        
-        // Fallback for non-Alpine messages
-        setTimeout(() => {
-            message.style.opacity = '0';
-            message.style.transform = 'translateX(100%)';
-            setTimeout(() => {
-                message.remove();
-            }, 300);
-        }, 5000);
-    });
-    
     // Form validation enhancements
     const forms = document.querySelectorAll('form');
     forms.forEach(form => {
